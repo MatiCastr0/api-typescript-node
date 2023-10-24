@@ -23,8 +23,11 @@ const UserSchema = new Schema<IUser>(
     rol: {
       type: String,
       lowercase: true,
-      default: "usuario",
-      enum: ["admin", "usuario"],
+      default: "client",
+      enum: ["admin", "client"],
+    },
+    imageUrl: {
+      type: String,
     },
   },
   {

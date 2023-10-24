@@ -5,6 +5,7 @@ interface IUser extends Document {
   email: string;
   contraseña: string;
   rol: string;
+  imageUrl: string;
   validarContraseña(contraseña: string): Promise<boolean>;
   guardarContraseña(): Promise<boolean>;
 }
